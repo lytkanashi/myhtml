@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<head>
+  <title>李宇澤的個人網站</title>
+  <meta charset="utf-8" >
+  <meta name="keywords" content="個人網站">
+  <meta nome='descrption' content='李宇澤 個人網站 學習歷程'>
+  <meta name="author" content="李宇澤">
+  <link src="https://drive.google.com/uc?export=view&id=1E6Y19JodWcQcTvkUKNKNn_EhkAFwWCUy"><!--icon-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+</head>
+
+
+<style>
+
+
+.chiron-goround-tc-<uniquifier> {
+  font-family: "Chiron GoRound TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+  
+html {
+  scroll-behavior: smooth;
+}
+  
+  /* 基本重置 */
+body {
+  display: flex; /* 使用 Flexbox 讓選單和內容並排 */
+  margin: 0;
+  background-color:#fefae0;
+}
+
+/* 側邊欄樣式 */
+.sidebar {
+  width: 270px;          /* 設定寬度 */
+  height: 100vh;         /* 高度撐滿螢幕 */
+  background-color: #e9edc9;
+  overflow-y: auto; /* 如果選單太長，顯示滾動條 */
+  color:#606c38;/*文字顏色*/
+  font-family:"Chiron GoRound TC", sans-serif;
+}
+
+.sidebar h2 {
+  padding: 5px;
+  font-size: 40px;
+  text-align:center;
+  color:#606c38;/*文字顏色*/
+}
+
+.sidebar ul {
+  list-style-type: none; /* 去除清單圓點 */
+  padding: 0;
+  margin: 0;
+}
+
+/* 選單按鈕樣式 */
+.sidebar li a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none; /* 去除下劃線 */
+  color:#606c38;/*文字顏色*/
+}
+
+/* 滑鼠經過與選中狀態 */
+.sidebar li a:hover {
+  background-color: #d9ed92;
+}
+.sidebar li a.active {  
+  background-color: #d9ed92;
+  font-weight: bold;
+}
+/* 主要內容區補白 */
+.content {
+  margin-left:270px;
+  flex-grow: 1;
+  padding: 20px;
+  
+}
+div{
+  color:#001d3d;/*文字顏色*/
+  background-color:#fefae0;
+  font-family:"Chiron GoRound TC", sans-serif;
+}
+div h1{
+    font-size:50px;
+    font-family:"Chiron GoRound TC", sans-serif;
+    text-align:center;
+    letter-spacing:10px;
+    
+  }
+div h2{
+  font-size:40px;
+  letter-spacing:7px;
+  text-align: center;
+  font-family:"Chiron GoRound TC", sans-serif;
+  border:2px;
+  border-style:solid;
+  border-radius: 20px 20px;
+  border-color:#faedcd;
+  background-color:#faedcd;
+}
+  div h3{
+  font-size:30px;
+  letter-spacing:7px;
+  font-family:"Chiron GoRound TC", sans-serif;
+  
+  }
+div p {
+    font-size:20px;
+    font-family:"Chiron GoRound TC", sans-serif;
+    letter-spacing:5px;
+    line-height:1.7;
+    white-space: pre-wrap;
+  }
+.intro-box {
+    font-family: "Chiron GoRound TC", sans-serif;
+    font-size: 25px;
+    letter-spacing: 7px;
+    line-height: 2; 
+    white-space: pre-wrap; 
+ }
+.intro-box2 {
+    font-family: "Chiron GoRound TC", sans-serif;
+    font-size: 20px;
+    letter-spacing: 5px;
+    line-height: 2; 
+    white-space: pre-wrap; 
+  }
+  table {
+    width: 100%; /* 讓表格撐滿容器 */
+    table-layout: fixed; /* 強制每一欄寬度相等 */
+}
+
+td {
+    vertical-align: top; /* 讓內容都從頂端對齊 */
+    text-align: left;    /* 文字靠左對齊 */
+}
+
+iframe {
+    max-width: 100%;    /* 確保影片不會超出表格格子 */
+}
+
+/* 影片容器：強制維持 16:9 比例並消除黑邊 */
+.video-container {
+  width: 100%;
+  aspect-ratio: 16 / 9; 
+  background-color: #000; /* 比例不符時顯示黑底 */
+  overflow: hidden;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.link {
+   text-decoration: none;
+   font-size:30px ;
+   color: #606c38;
+}
+.link a:hover{
+  font-size: 40px;
+  color: #606c38;
+  
+}
+
+
+</style>
+
+
+<html>
+<nav class="sidebar" style='position:fixed;'>
+  <h2>選單</h2>
+  <ul>
+    <li><a href="#myself">個人介紹</a></li>
+    <li><a href="#music">音樂推薦</a></li>
+    <li><a href="#book">書單</a></li>
+    <li><a href="#other">其他</a></li>
+  </ul>
+</nav>
+
+<body>
+  
+ <div class="content"  >
+   <h1>HELLO!</h1>
+   <h2 id='myself'>個人介紹</h2>
+   <img style="float:right;" src="https://lh3.googleusercontent.com/d/1-BsJXwZ7QFd912VXpzbjg39rZwIQLl30=w300"  alt="我的照片">
+<p class='intro-box'>我是李宇澤
+一位剛接觸網頁語言不久的高中生。
+嘗試建立自己的個人網頁，
+並記錄、分享一部份的自己。
+讓他人如有興趣，可以由此了解我。
+</p> 
+   <br>
+   
+   
+   <h3>興趣、信念</h3>
+   <p class='intro-box2'>喜歡以閱讀作為休閒活動。
+獨立音樂、聽Ｊpop。
+思考自己要如何過好自己的生活。
+透過不斷的思索，後加以行動，增加人生經驗的闊度。
+雖然我僅是一名學生，受限於個人生活的社群經歷，
+也想嘗試活出令我不悔的一生。
+在我接觸各類書籍、影片後，偶然間看到這一句話。</p>
+   <p class='intro-box' style='font-style:italic;'>   一個人是一生行為總和。</p>
+   <p class='intro-box2'>這句話出自於法國作家馬爾羅，而它，
+賜與我做出行動第一步的勇氣。</p>
+   
+  <h2 id="music">音樂推薦</h2>
+   <table>
+     <tr>
+       <td><div class='video-container'><iframe wight='560' height='315' src="https://www.youtube-nocookie.com/embed/a1dxsIeuDK0?si=ngrgaIBP5jcQ9UcH" 
+             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></td>
+       <td><div class='video-container'><iframe src="https://www.youtube-nocookie.com/embed/zgi1UrfCLfc?si=Er80_wtXtNV2tph-" 
+             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></td>
+     </tr>
+
+     <tr>
+       <td class='intro-box2'>  在我16歲時，開始自我探索，也在此時有所迷茫。觀察在日常中所遇的人，思考所讀文本中的人們，而發現人有時候都走在成為他者模樣了路上，卻不知道自己的渴求，不知道所自己的願想。直到死亡卻都失卻了自己。</td>
+       <td class='intro-box2'>  我很喜歡的一位創作歌手，而她的歌曲幫我度過許多繁星黯淡、對未來焦慮的夜晚。</td>
+     </tr>
+
+    <tr>
+       <td><div class='video-container'><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/e1pZIfretEs?si=c8Bu6PeKuMmBface" 
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></td>
+       <td><div class='video-container'><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BsBSxyBdSts?si=2wyMH9sKrZRAs45c" 
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></td>
+    </tr>
+    
+    <tr>
+      <td class='intro-box2'>  日本的後搖樂團。歌曲中情緒慢慢堆疊，在最後副歌時爆發。使我沉浸於其中。</td>
+      <td class='intro-box2'>  個人非常喜歡此曲作者的各項作品，不同於一般流行音樂，他的作品裡常加入各種電子鼓、弦樂、效果元素，使其的音樂具有個人特色及一定的辨識度，使我著迷。</td>
+    </tr>
+    
+   </table>
+   <div style="text-align: center;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/960px-YouTube_full-color_icon_%282017%29.svg.png" width="40">
+      <a class="link" href="https://youtube.com/playlist?list=PLiDfDhvGe6aVev9l0NwJAhzppfbw1sZzJ&si=LHyr3_Fz3CDa01Wl" target="_blank" > 點此前往歌單(youtube)</a>
+    </div>
+   
+   <h2 id='book'>書單</h2>
+   <img style="float: right;" src="https://lh3.googleusercontent.com/d/1RO_naZc-AvGlyD_QBO25HnXV16zhVx_8=w400">
+   <p class="intro-box2" >升上高中後，我在課餘時間看課外書的比例顯著提高
+，從最能延續閱讀興致的輕小說開始，接觸到入日本的大眾文學及推理作品。
+接著在與哲學類書有了不少眼緣，而開始閱讀起不同的思想，
+也讓我構築起自己的視野和價值觀，有了自己的想法和些許目標。
+然後接觸了各類文學作品，豐富了心靈世界。
+而那些工具書，也讓我知道了學校沒有教受予我的事物。
+使我能夠擁有不同的工具，可以解決行動、想法、計畫上的問題。
+去為了自身目標所努力。
+   </p>
+  <div style="text-align: center; clear: both;" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWjndQqBR1-JgfwoZDnMWAramovIinwm2ZPA&s" width="40"><a class="link" target="_blank" href="https://www.notion.so/19b7a5ccc6e6801fbd19fac0ee4b18c1?v=19b7a5ccc6e680548f75000c09170090&source=copy_link">點此前往我的書單(notion)</a></div>
+   
+   <h2 id='other'>其他</h2>
+   <div style="text-align: center;"><img src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584853.png" width="40"><a href="https://www.instagram.com/lyt.kanashi0118/" class="link">點此前往個人Instagram</a></div>
+   <div style="text-align: center;"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" width="40"><a href="https://discord.gg/ZMXzUESUy" class="link">點此前往個人Discord</a>
+ </div>
+
+
+</body>
+</html>
