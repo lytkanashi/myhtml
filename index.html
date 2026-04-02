@@ -28,20 +28,20 @@ html {
   scroll-behavior: smooth;
 }
   
-  /* 基本重置 */
+  
 body {
-  display: flex; /* 使用 Flexbox 讓選單和內容並排 */
+  display: flex; 
   margin: 0;
   background-color:#fefae0;
 }
 
-/* 側邊欄樣式 */
+
 .sidebar {
-  width: 270px;          /* 設定寬度 */
-  height: 100vh;         /* 高度撐滿螢幕 */
+  width: 270px;          
+  height: 100vh;         
   background-color: #e9edc9;
-  overflow-y: auto; /* 如果選單太長，顯示滾動條 */
-  color:#606c38;/*文字顏色*/
+  overflow-y: auto; 
+  color:#606c38;
   font-family:"Chiron GoRound TC", sans-serif;
 }
 
@@ -49,32 +49,32 @@ body {
   padding: 5px;
   font-size: 40px;
   text-align:center;
-  color:#606c38;/*文字顏色*/
+  color:#606c38;
 }
 
 .sidebar ul {
-  list-style-type: none; /* 去除清單圓點 */
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-/* 選單按鈕樣式 */
+
 .sidebar li a {
   display: block;
   padding: 12px 20px;
-  text-decoration: none; /* 去除下劃線 */
-  color:#606c38;/*文字顏色*/
+  text-decoration: none; 
+  color:#606c38;
 }
 
-/* 滑鼠經過與選中狀態 */
+
 .sidebar li a:hover {
   background-color: #d9ed92;
 }
-.sidebar li a.active {  
+.sidebar li a:active {  
   background-color: #d9ed92;
   font-weight: bold;
 }
-/* 主要內容區補白 */
+
 .content {
   margin-left:270px;
   flex-grow: 1;
@@ -82,7 +82,7 @@ body {
   
 }
 div{
-  color:#001d3d;/*文字顏色*/
+  color:#001d3d;
   background-color:#fefae0;
   font-family:"Chiron GoRound TC", sans-serif;
 }
